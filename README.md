@@ -6,7 +6,7 @@ Converted trained weights needed to run the network.
 
 
 Download converted weights here:
-[link:pspnet50_ade20k.npy](https://www.dropbox.com/s/ms8afun494dlh1t/pspnet50_ade20k.npy?dl=0)
+[link:pspnet.hd5](https://www.dropbox.com/s/kd5jh03twpww71q/pspnet.hd5?dl=0)
 
 And place in directory with pspnet50_ade20k.npy
 
@@ -21,13 +21,12 @@ Interpolation layer is implemented in code as custom layer "Interp"
 ## Important
 
 Results Keras:
-![Original](test.jpg)
+![Original](stair.jpg)
 
-![New](out.jpg)
-![New](probs.jpg)
+![New](labelled.jpg)
 
-## Pycaffe result
-![Pycaffe results](test_pycaffe.jpg)
+![Annotations](anns.jpg)
+
 ## Dependencies:
 1. Tensorflow
 2. Keras
@@ -38,6 +37,6 @@ Results Keras:
 ## Usage: 
 
 ```bash
-python pspnet.py --input-path INPUT_PATH --output-path OUTPUT_PATH
+python pspnet.py --input-path INPUT_PATH --output-path OUTPUT_PATH --load_weight pspnet.hd5
 ```
 
