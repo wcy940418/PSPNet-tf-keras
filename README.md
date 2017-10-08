@@ -21,7 +21,7 @@ Interpolation layer is implemented in code as custom layer "Interp"
 ## Important
 
 Results Keras:
-![Original](stair.jpg)
+![Original](stair.JPG)
 
 ![New](labelled.jpg)
 
